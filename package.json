@@ -1,0 +1,30 @@
+{
+  "name": "backend-spacebooking",
+  "version": "1.0.0",
+  "description": "",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node app.js",
+    "client": "cd.. && cd frontend-spacebooking && npm start",
+    "dev": "concurrently \"nodemon app.js\" \"npm run client\""
+  },
+  "keywords": [
+    "Task"
+  ],
+  "author": "Fahad",
+  "license": "ISC",
+  "devDependencies": {
+    "nodemon": "^2.0.15"
+  },
+  "dependencies": {
+    "axios": "^0.26.1",
+    "bcrypt": "^5.0.1",
+    "body-parser": "^1.20.0",
+    "concurrently": "^7.1.0",
+    "cors": "^2.8.5",
+    "dotenv": "^16.0.0",
+    "jsonwebtoken": "^8.5.1",
+    "mongoose": "^6.2.10"
+  }
+}
